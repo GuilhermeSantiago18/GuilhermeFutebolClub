@@ -9,13 +9,14 @@ export default class TeamController {
   }
 
   async findAll(_req: express.Request, res: express.Response) {
-    const result = await this._service.findAll();
-    return res.status(200).json(result);
+    const allTeams = await this._service.findAll();
+    return res.status(200).json(allTeams);
   }
 
-  async findById(_req: express.Request, res: express.Response) {
+  async findByPk(_req: express.Request, res: express.Response) {
     const { id } = _req.params;
-    const result = await this._service.findById(+id);
-    return res.status(200).json(result);
+    const teamById = await this._service.findByPk(+id);
+    if (!teamById) return res.status(404).json({ message: 'Product not found' });
+    return res.status(200).json(teamById);
   }
 }

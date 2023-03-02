@@ -10,9 +10,8 @@ export default class TeamService implements IServiceTeam {
     return teams;
   }
 
-  async findById(id: number): Promise<ITeam> {
-    const teamforId = await this.model.findByPk(id);
-    if (!teamforId) throw new Error('Method not implemented.');
-    return teamforId;
+  async findByPk(id: number): Promise<ITeam | null> {
+    const teamById = await this.model.findByPk(id);
+    return teamById;
   }
 }

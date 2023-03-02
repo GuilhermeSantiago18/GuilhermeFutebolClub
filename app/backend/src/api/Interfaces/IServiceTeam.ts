@@ -5,5 +5,5 @@ export interface ITeam {
 
 export default interface IServiceTeam {
   findAll(): Promise<ITeam[]>;
-  findById(id: number): Promise<ITeam>;
+  findByPk(id: number): Promise<ITeam | null>;
 }

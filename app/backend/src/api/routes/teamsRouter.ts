@@ -10,6 +10,6 @@ teamsRouter.get('/teams', (request: Request, response: Response) =>
   teamsController.findAll(request, response));
 
 teamsRouter.get('/teams/:id', (request: Request, response: Response) =>
-  teamsController.findById(request, response));
+  teamsController.findByPk(request, response));
 
 export default teamsRouter;
