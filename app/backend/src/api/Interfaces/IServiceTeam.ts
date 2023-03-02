@@ -1,5 +1,5 @@
-import Teams from '../models/teamModel';
+import Teams from '../../database/models/teamModel';
 
 export default interface IServiceTeam {
-  findAll(): Promise<Teams>;
+  findAll(): Promise<Teams[]>;
 }

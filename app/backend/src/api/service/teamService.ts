@@ -1,5 +1,5 @@
 import { ModelStatic } from 'sequelize';
-import Teams from '../models/teamModel';
+import Teams from '../../database/models/teamModel';
 
 export default class TeamService {
   protected model: ModelStatic<Teams> = Teams;
