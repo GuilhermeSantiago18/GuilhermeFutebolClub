@@ -1,5 +1,5 @@
 import * as express from 'express';
-import router from './api/routes/teamsRouter';
+import teamsRouter from './api/routes/teamsRouter';
 // iniciando TFC
 class App {
   public app: express.Express;
@@ -22,7 +22,7 @@ class App {
     };
 
     this.app.use(express.json());
-    this.app.use(router);
+    this.app.use(teamsRouter);
     this.app.use(accessControl);
   }
 
