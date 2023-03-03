@@ -1,3 +1,8 @@
 export interface ILogin {
-  validateLogin(email: string, password: string): Promise<string | null>;
+  email: string;
+  password: string;
+}
+
+export interface IServiceLogin {
+  validateLogin(user: ILogin): Promise<string | null>;
 }
