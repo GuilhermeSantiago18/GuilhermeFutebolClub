@@ -1,18 +1,16 @@
-import * as jwt from 'jsonwebtoken';
-import IToken from '../Interfaces/IToken';
+import { sign, SignOptions } from 'jsonwebtoken';
+import 'dotenv/config';
 
-class JWTToken {
-  private secret = 'jwt_secret';
+const secret = process.env.JWT_SECRET as string;
 
-  createToken(payload: IToken): string {
-    const token = jwt.sign(payload, this.secret);
-    return token;
-  }
+const generateToken = (payload: unknown, expiresIn = '1d') => {
+  const jwtConfig: SignOptions = {
+    expiresIn,
+    algorithm: 'HS256',
+  };
 
-  authToken(token: string): IToken {
-    const payload = jwt.verify(token, this.secret) as IToken;
-    return payload;
-  }
-}
+  const token = sign({ payload }, secret, jwtConfig);
+  return token;
+};
 
-export default JWTToken;
+export default generateToken;

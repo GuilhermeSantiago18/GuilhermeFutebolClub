@@ -3,6 +3,6 @@ export interface ILogin {
   password: string;
 }
 
-export interface IServiceLogin {
-  validateLogin(user: ILogin): Promise<string | null>;
+export default interface IServiceLogin {
+  validateLogin(user: ILogin): Promise<string>;
 }
