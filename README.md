@@ -1,13 +1,12 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+Esse é o Guilherme Futebol Clube, em alusão ao Trybe Futebol Clube, é um site informativo sobre partidas e classificações de futebol, desenvolvido por mim  com o objetivo de uma aplicação completa e funcional que atenda às necessidades dos usuários desse ecossistema.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Neste projeto foi desenvolvido uma API com práticas de TDD e para integrar as aplicações front e back foi utilizado o docker-compose, para que elas funcionem consumindo um banco de dados.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Um token de acesso é necessário para adicionar uma partida, isso exige que o usuário esteja autenticado para fazer alterações e atualizações.
+
+Todas as regras de negócio foram respeitadas e a API foi projetada para ser consumida pelo front-end que será exibido ao usuário final do sistema.
+
+Ferramentas, linguagens e técnicas utilizadas:
+Front-End: React, Axios, CSS.
+Back-end: Javascript, Typescript, Node.js, Express, Sequelize como ORM, POO, SOLID.
+Testes: Mocha, chai, sinon, jest.
