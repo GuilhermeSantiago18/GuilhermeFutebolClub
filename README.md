@@ -4,7 +4,7 @@
 
 Esse é o Guilherme Futebol Clube, em alusão ao Trybe Futebol Clube, é um site informativo sobre partidas e classificações de futebol, desenvolvido por mim  com o objetivo de uma aplicação completa e funcional que atenda às necessidades dos usuários desse ecossistema.
 
-Neste projeto foi desenvolvido uma API com práticas de TDD e para integrar as aplicações front e back foi utilizado o docker-compose, para que elas funcionem consumindo um banco de dados.
+Neste projeto foi desenvolvido uma API com práticas de TDD e para integrar as aplicações front e back foi utilizado o docker-compose. A aplicação funciona consumindo um banco de dados.
 
 Um token de acesso é necessário para adicionar uma partida, isso exige que o usuário esteja autenticado para fazer alterações e atualizações.
 
